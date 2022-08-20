@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: #457B9D;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.da.controller.Doctor">
+   <children>
+      <Button alignment="CENTER" layoutX="486.0" layoutY="651.0" mnemonicParsing="false" onAction="#back" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #A8DADC; -fx-cursor: hand;" text="Back" textAlignment="CENTER" textFill="#1d3557">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="dataTableView" layoutX="14.0" layoutY="20.0" prefHeight="660.0" prefWidth="362.0" style="-fx-background-color: #e0faff;">
+         <columns>
+            <TableColumn fx:id="nameTableColumn" minWidth="120.0" prefWidth="120.0" text="Name" />
+            <TableColumn fx:id="specialityTableColumn" minWidth="120.0" prefWidth="120.0" text="Speciality" />
+            <TableColumn fx:id="hospitalTableColumn" minWidth="120.0" prefWidth="120.0" text="Hospital Name" />
+         </columns>
+      </TableView>
+      <Button alignment="CENTER" layoutX="421.0" layoutY="289.0" mnemonicParsing="false" onAction="#add" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #A8DADC; -fx-cursor: hand;" text="Add" textAlignment="CENTER" textFill="#1d3557">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="421.0" layoutY="349.0" mnemonicParsing="false" onAction="#delete" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #ff5c68; -fx-cursor: hand;" text="Delete" textAlignment="CENTER" textFill="#1d3557">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="hospitalC" layoutX="396.0" layoutY="70.0" prefHeight="40.0" prefWidth="180.0" promptText="Select Hospital" style="-fx-background-color: #e0faff;" />
+      <TextField fx:id="name" layoutX="396.0" layoutY="130.0" prefHeight="40.0" prefWidth="180.0" promptText="name" style="-fx-background-color: #e0faff;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="speciality" layoutX="396.0" layoutY="190.0" prefHeight="40.0" prefWidth="180.0" promptText="speciality" style="-fx-background-color: #e0faff;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lb" alignment="CENTER" layoutX="396.0" layoutY="250.0" prefHeight="30.0" prefWidth="180.0" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

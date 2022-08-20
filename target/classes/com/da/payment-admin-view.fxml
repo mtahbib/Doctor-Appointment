@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: #457B9D;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.da.controller.PaymentAdmin">
+   <children>
+      <TableView fx:id="dataTableView" layoutX="20.0" layoutY="29.0" prefHeight="460.0" prefWidth="560.0" style="-fx-background-color: #e0faff;">
+         <columns>
+            <TableColumn fx:id="userTableColumn" minWidth="160.0" prefWidth="160.0" text="Patient Name" />
+            <TableColumn fx:id="methodTableColumn" minWidth="140.0" prefWidth="140.0" text="Payment Method" />
+            <TableColumn fx:id="trxTableColumn" minWidth="140.0" prefWidth="140.0" text="Transaction Id" />
+            <TableColumn fx:id="slotTableColumn" minWidth="115.0" prefWidth="115.0" text="Status" />
+         </columns>
+      </TableView>
+      <Button alignment="CENTER" layoutX="218.0" layoutY="504.0" mnemonicParsing="false" onAction="#accept" prefHeight="35.0" prefWidth="165.0" style="-fx-background-color: #0b2240; -fx-cursor: hand;" text="Accept" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="486.0" layoutY="651.0" mnemonicParsing="false" onAction="#back" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #A8DADC; -fx-cursor: hand;" text="Back" textAlignment="CENTER" textFill="#1d3557">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

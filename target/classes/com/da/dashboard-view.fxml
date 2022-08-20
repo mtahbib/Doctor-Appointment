@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: #457B9D;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.da.controller.Dashboard">
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutX="162.0" layoutY="57.0" prefHeight="46.0" prefWidth="138.0" text="Hello, " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="booking" alignment="CENTER" layoutX="200.0" layoutY="320.0" mnemonicParsing="false" onAction="#booking" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #A8DADC; -fx-cursor: hand;" text="Book Now" textAlignment="CENTER" textFill="#1d3557">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bookingC" alignment="CENTER" layoutX="200.0" layoutY="440.0" mnemonicParsing="false" onAction="#cancelB" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #ff5c68; -fx-cursor: hand;" text="Cancel Booking" textAlignment="CENTER" textFill="#1d3557">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="486.0" layoutY="651.0" mnemonicParsing="false" onAction="#logout" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #A8DADC; -fx-cursor: hand;" text="Log Out" textAlignment="CENTER" textFill="#1d3557">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="125.0" layoutY="147.0" prefHeight="139.0" prefWidth="350.0" style="-fx-background-color: #F1FAEE;">
+         <children>
+            <Label fx:id="d" alignment="CENTER" layoutX="25.0" layoutY="20.0" prefHeight="100.0" prefWidth="300.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="name" layoutX="300.0" layoutY="57.0" prefHeight="46.0" prefWidth="138.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="payment" alignment="CENTER" layoutX="200.0" layoutY="380.0" mnemonicParsing="false" onAction="#payment" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #A8DADC; -fx-cursor: hand;" text="Payment" textAlignment="CENTER" textFill="#1d3557">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

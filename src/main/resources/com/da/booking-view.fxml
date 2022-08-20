@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: #457B9D;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.da.controller.Booking">
+   <children>
+      <ComboBox fx:id="hospitalC" layoutX="175.0" layoutY="180.0" prefHeight="40.0" prefWidth="250.0" promptText="Select Hospital" style="-fx-background-color: #A8DADC;" />
+      <ComboBox fx:id="doctorC" layoutX="175.0" layoutY="250.0" prefHeight="40.0" prefWidth="250.0" promptText="Select Doctor" style="-fx-background-color: #A8DADC;" />
+      <RadioButton fx:id="s2" layoutX="314.0" layoutY="320.0" mnemonicParsing="false" onAction="#toggleB" text="7.00-7.45 pm" textFill="#f1faee">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tg" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="s3" layoutX="164.0" layoutY="380.0" mnemonicParsing="false" onAction="#toggleB" text="8.00-8.45 pm" textFill="#f1faee" toggleGroup="$tg">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="s4" layoutX="314.0" layoutY="380.0" mnemonicParsing="false" onAction="#toggleB" text="8.00-8.45 pm" textFill="#f1faee" toggleGroup="$tg">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="s1" layoutX="164.0" layoutY="320.0" mnemonicParsing="false" onAction="#toggleB" text="6.00-6.45 pm" textFill="#f1faee" toggleGroup="$tg">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <Button alignment="CENTER" layoutX="486.0" layoutY="651.0" mnemonicParsing="false" onAction="#back" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #A8DADC; -fx-cursor: hand;" text="Back" textAlignment="CENTER" textFill="#1d3557">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="book" alignment="CENTER" layoutX="250.0" layoutY="429.0" mnemonicParsing="false" onAction="#book" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #A8DADC; -fx-cursor: hand;" text="Book" textAlignment="CENTER" textFill="#1d3557">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

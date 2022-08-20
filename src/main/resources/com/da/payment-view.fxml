@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: #457B9D;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.da.controller.Payment">
+   <children>
+      <Button alignment="CENTER" layoutX="486.0" layoutY="651.0" mnemonicParsing="false" onAction="#back" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #A8DADC; -fx-cursor: hand;" text="Back" textAlignment="CENTER" textFill="#1d3557">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="227.0" layoutY="302.0" mnemonicParsing="false" onAction="#submit" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #A8DADC; -fx-cursor: hand;" text="Submit" textAlignment="CENTER" textFill="#1d3557">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="trx" layoutX="277.0" layoutY="204.0" prefHeight="40.0" prefWidth="220.0" promptText="transaction id" style="-fx-background-color: #e0faff;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="204.0" prefHeight="40.0" prefWidth="226.0" text="Transaction Id:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="155.0" prefHeight="40.0" prefWidth="226.0" text="Transaction method:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rocket" layoutX="387.0" layoutY="163.0" mnemonicParsing="false" onAction="#toggleB" text="rocket" textFill="#f1faee">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tg" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="bkash" layoutX="289.0" layoutY="163.0" mnemonicParsing="false" onAction="#toggleB" text="bkash" textFill="#f1faee">
+         <toggleGroup>
+            <ToggleGroup fx:id="tg" />
+         </toggleGroup>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="lbl" alignment="CENTER" layoutX="207.0" layoutY="259.0" prefHeight="27.0" prefWidth="140.0" textFill="#fffafa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
